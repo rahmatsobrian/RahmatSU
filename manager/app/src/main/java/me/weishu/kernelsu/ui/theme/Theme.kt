@@ -101,19 +101,19 @@ object ThemeController {
 }
 
 @Composable
-fun KernelSUTheme(
+fun RahmatSUTheme(
     appSettings: AppSettings = ThemeController.getAppSettings(),
     uiMode: UiMode = LocalUiMode.current,
     content: @Composable () -> Unit
 ) {
 
     when (uiMode) {
-        UiMode.Miuix -> MiuixKernelSUTheme(
+        UiMode.Miuix -> MiuixRahmatSUTheme(
             appSettings = appSettings,
             content = content
         )
 
-        UiMode.Material -> MaterialKernelSUTheme(
+        UiMode.Material -> MaterialRahmatSUTheme(
             appSettings = appSettings,
             content = content
         )

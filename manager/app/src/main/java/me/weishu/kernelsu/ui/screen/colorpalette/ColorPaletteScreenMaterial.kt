@@ -91,7 +91,7 @@ import me.weishu.kernelsu.ui.component.material.TopBarBackButton
 import me.weishu.kernelsu.ui.component.material.expressiveTopAppBarColors
 import me.weishu.kernelsu.ui.theme.ColorMode
 import me.weishu.kernelsu.ui.theme.keyColorOptions
-import me.weishu.kernelsu.ui.theme.rememberKernelSUColorScheme
+import me.weishu.kernelsu.ui.theme.rememberRahmatSUColorScheme
 
 @Composable
 fun ColorPaletteScreenMaterial(
@@ -342,7 +342,7 @@ private fun ThemePreviewCard(
     val screenHeight = configuration.screenHeightDp.toFloat()
     val screenRatio = screenWidth / screenHeight
 
-    val colorScheme = rememberKernelSUColorScheme(
+    val colorScheme = rememberRahmatSUColorScheme(
         seedColor = if (keyColor == 0) Color.Unspecified else Color(keyColor),
         isDark = isDark,
         isAmoled = isAmoled,
@@ -464,7 +464,7 @@ private fun ColorButtonMaterial(
     onClick: () -> Unit
 ) {
     val haptic = LocalHapticFeedback.current
-    val colorScheme = rememberKernelSUColorScheme(
+    val colorScheme = rememberRahmatSUColorScheme(
         seedColor = color,
         isDark = isDark,
         isAmoled = isAmoled,

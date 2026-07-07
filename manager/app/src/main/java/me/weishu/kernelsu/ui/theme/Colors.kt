@@ -3,7 +3,21 @@ package me.weishu.kernelsu.ui.theme
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 
+// Catppuccin palette (KernelSU-Next inspired accents), placed first as the RahmatSU signature colors.
+val CATPPUCCIN_BLUE = Color(0xFF8AADF4).toArgb()
+val CATPPUCCIN_LAVENDER = Color(0xFFB7BDF8).toArgb()
+val CATPPUCCIN_SKY = Color(0xFF7DC4E4).toArgb()
+val CATPPUCCIN_GREEN = Color(0xFFA6DA95).toArgb()
+val CATPPUCCIN_PINK = Color(0xFFF5BDE6).toArgb()
+val CATPPUCCIN_MAUVE = Color(0xFF6E6CB6).toArgb()
+
 val keyColorOptions = listOf(
+    CATPPUCCIN_BLUE,
+    CATPPUCCIN_LAVENDER,
+    CATPPUCCIN_SKY,
+    CATPPUCCIN_GREEN,
+    CATPPUCCIN_PINK,
+    CATPPUCCIN_MAUVE,
     Color(0xFFF44336).toArgb(),
     Color(0xFFE91E63).toArgb(),
     Color(0xFF9C27B0).toArgb(),

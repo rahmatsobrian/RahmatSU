@@ -50,7 +50,9 @@ class SettingsRepositoryImpl : SettingsRepository {
         set(value) = prefs.edit { putBoolean("miuix_monet", value) }
 
     override var keyColor: Int
-        get() = prefs.getInt("key_color", 0)
+        // Default seed color: Catppuccin Blue (#8AADF4), matching RahmatSU's KernelSU-Next-inspired look.
+        // Value 0 means "dynamic/wallpaper" color, so we default to this fixed brand color instead.
+        get() = prefs.getInt("key_color", 0xFF8AADF4.toInt())
         set(value) = prefs.edit { putInt("key_color", value) }
 
     override var colorStyle: String
